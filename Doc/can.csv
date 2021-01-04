@@ -1,0 +1,27 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,manf#,lcsc#
+1,Unpolarized capacitor,C,C15 C17 C19 C21,100n,C_0603_1608Metric,4,,CL10B104KB8NNNC,C1591
+2,Unpolarized capacitor,C,C16 C18 C20,10u,C_1206_3216Metric,3,,CL31B106KAHNNNE,C14860
+3,Bidirectional dual transient-voltage-suppression diode/ center on pin 3,D_TVS_x2_AAC,D4,ESDCAN24,SOT-23,1,,ESDCAN24-2BLY,C246766
+4,Schottky diode,D_Schottky,D2 D3,MBR0520L,D_SOD-123,2,,MBR0520LT1G,C23848
+5,EMI 2-inductor filter,EMI_Filter_CommonMode,FL1,DNP,FIL_ACT45B-510-2P-TL003,1,,ACT45B-510-2P-TL003,C76584
+6,Generic screw terminal/ single row/ 01x03/ script generated (kicad-library-utils/schlib/autogen/connector/),Screw_Terminal_01x03,J2,CAN,TerminalBlock_KaiFeng_KF141R-3_1x03_P2.54mm,1,,KF141R-2.54-3P,C475125
+7,Resistor,R,R7 R8,0R,R_0603_1608Metric,2,,WR06X0000FTL,C163836
+8,,TRANSF5,TR1,1:2.1,TOROID_SMD_6PIN_(1109),1,,760390015,
+9,,ISO1044,U4,ISO1044,SOIC-8_3.9x4.9mm_P1.27mm,1,https://www.ti.com/lit/ds/symlink/iso1044.pdf,ISO1044BD,
+10,Low Noise/ 1A/ Transformer Drivers for Isolated Power Supplies/ 160 kHz/ SOT-23-6,SN6505ADBV,U3,SN6505B,SOT-23-6,1,http://www.ti.com/lit/ds/symlink/sn6505b.pdf,SN6505BDBVR,C74518
+11,Low power 150mA LDO/ 1.6V fixed output voltage/ SOT-23-5,TPS76350,U2,TPS76350,SOT-23-5,1,http://www.ti.com/lit/ds/symlink/tps763.pdf,TPS76350DBVR,C194609
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Component Groups:,11,,,,,,,,
+Component Count:,18,,,,,,,,
+Fitted Components:,18,,,,,,,,
+Number of PCBs:,1,,,,,,,,
+Total components:,18,,,,,,,,
+Schematic Version:,v0.1-SNAPSHOT,,,,,,,,
+Schematic Date:,2020-11-21,,,,,,,,
+BoM Date:,26.12.2020 1:52:37,,,,,,,,
+Schematic Source:,C:\Users\User\Documents\Git\MiniFeedMaster\can.sch,,,,,,,,
+KiCad Version:,Eeschema (5.1.5)-3,,,,,,,,
