@@ -57,9 +57,8 @@ F0 "FeederInterface" 50
 F1 "feeder.sch" 50
 F2 "SDA" B L 8000 2400 50 
 F3 "SCL" I L 8000 2500 50 
-F4 "Fault" O L 8000 2700 50 
-F5 "V_ID" I L 8000 2900 50 
-F6 "ID_FB" O L 8000 3000 50 
+F4 "V_ID" I L 8000 2900 50 
+F5 "ID_FB" O L 8000 3000 50 
 $EndSheet
 Text Label 5400 4200 2    50   ~ 0
 IO_SDA
@@ -74,20 +73,18 @@ Wire Wire Line
 Wire Wire Line
 	7300 3800 8000 3800
 Wire Wire Line
-	4700 2300 5800 2300
-Wire Wire Line
-	5800 2300 5800 2100
+	4700 2300 4900 2300
 $Comp
 L power:VBUS #PWR?
 U 1 1 5FBDA81B
-P 5800 2100
+P 4900 2300
 AR Path="/5FE0391C/5FBDA81B" Ref="#PWR?"  Part="1" 
 AR Path="/5FBDA81B" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 5800 1950 50  0001 C CNN
-F 1 "VBUS" H 5815 2273 50  0000 C CNN
-F 2 "" H 5800 2100 50  0001 C CNN
-F 3 "" H 5800 2100 50  0001 C CNN
-	1    5800 2100
+F 0 "#PWR04" H 4900 2150 50  0001 C CNN
+F 1 "VBUS" H 4915 2473 50  0000 C CNN
+F 2 "" H 4900 2300 50  0001 C CNN
+F 3 "" H 4900 2300 50  0001 C CNN
+	1    4900 2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -96,10 +93,6 @@ Text Label 7300 2500 0    50   ~ 0
 FD_SCL
 Wire Wire Line
 	7300 2500 8000 2500
-Text Label 5400 3800 2    50   ~ 0
-FD_FAULT
-Wire Wire Line
-	5400 3800 4700 3800
 Text Label 7300 2900 0    50   ~ 0
 FD_ID
 Wire Wire Line
@@ -110,14 +103,14 @@ Wire Wire Line
 	7300 3000 8000 3000
 Text Label 7300 2400 0    50   ~ 0
 FD_SDA
-Text Label 5400 1800 2    50   ~ 0
+Text Label 5100 1800 2    50   ~ 0
 FD_ID
 Wire Wire Line
-	5400 1800 4700 1800
-Text Label 5400 1900 2    50   ~ 0
+	5100 1800 4700 1800
+Text Label 5100 1900 2    50   ~ 0
 FD_FB
 Wire Wire Line
-	5400 1900 4700 1900
+	5100 1900 4700 1900
 Wire Wire Line
 	5400 4000 4700 4000
 Text Label 5400 3900 2    50   ~ 0
@@ -147,12 +140,12 @@ Wire Wire Line
 Text Label 5400 3400 2    50   ~ 0
 TRSWO
 Wire Wire Line
-	5400 2800 4700 2800
-Text Label 5400 2800 2    50   ~ 0
+	5100 2800 4700 2800
+Text Label 5100 2800 2    50   ~ 0
 SWCLK
 Wire Wire Line
-	5400 2700 4700 2700
-Text Label 5400 2700 2    50   ~ 0
+	5100 2700 4700 2700
+Text Label 5100 2700 2    50   ~ 0
 SWDIO
 NoConn ~ 4700 2900
 Wire Wire Line
@@ -171,10 +164,6 @@ Wire Wire Line
 	2600 4200 3300 4200
 Text Label 2600 4200 0    50   ~ 0
 UART_RX
-Text Label 7300 2700 0    50   ~ 0
-FD_FAULT
-Wire Wire Line
-	7300 2700 8000 2700
 $Comp
 L Device:R R4
 U 1 1 5FC07115
@@ -291,7 +280,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 4900 1500 4900
 Wire Wire Line
-	1500 4900 1500 3000
+	1500 4900 1500 3800
 Connection ~ 3800 4900
 Connection ~ 1500 3000
 $Comp
@@ -339,7 +328,6 @@ F 5 "MPZ2012S601ATD25" H 4100 900 50  0001 C CNN "manf#"
 	1    4100 900 
 	0    1    1    0   
 $EndComp
-NoConn ~ 3300 2900
 Wire Wire Line
 	4200 1200 4200 1100
 Wire Wire Line
@@ -531,27 +519,23 @@ Wire Wire Line
 Wire Wire Line
 	6300 1300 6300 1400
 Wire Wire Line
-	6300 1400 6500 1400
+	6300 1400 6700 1400
 Wire Wire Line
 	6700 1400 6700 1300
-Wire Wire Line
-	6500 1400 6500 1500
-Connection ~ 6500 1400
-Wire Wire Line
-	6500 1400 6700 1400
+Connection ~ 6700 1400
 $Comp
 L power:GND #PWR?
 U 1 1 5FD4FAD9
-P 6500 1500
+P 6700 1400
 AR Path="/5FB747BE/5FD4FAD9" Ref="#PWR?"  Part="1" 
 AR Path="/5FD8C23D/5FD4FAD9" Ref="#PWR?"  Part="1" 
 AR Path="/5FE0391C/5FD4FAD9" Ref="#PWR?"  Part="1" 
 AR Path="/5FD4FAD9" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 6500 1250 50  0001 C CNN
-F 1 "GND" H 6505 1327 50  0000 C CNN
-F 2 "" H 6500 1500 50  0001 C CNN
-F 3 "" H 6500 1500 50  0001 C CNN
-	1    6500 1500
+F 0 "#PWR03" H 6700 1150 50  0001 C CNN
+F 1 "GND" H 6705 1227 50  0000 C CNN
+F 2 "" H 6700 1400 50  0001 C CNN
+F 3 "" H 6700 1400 50  0001 C CNN
+	1    6700 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -821,7 +805,6 @@ F 4 "DNP" H 2100 5800 50  0001 C CNN "DNP"
 $EndComp
 Wire Wire Line
 	3000 5700 3000 5800
-NoConn ~ 3300 4300
 NoConn ~ 3300 4500
 NoConn ~ 3300 4600
 NoConn ~ 3300 4000
@@ -829,8 +812,6 @@ NoConn ~ 3300 3900
 NoConn ~ 3300 3800
 NoConn ~ 3300 3700
 NoConn ~ 3300 3400
-NoConn ~ 3300 3300
-NoConn ~ 3300 3100
 NoConn ~ 4700 1700
 NoConn ~ 4700 2000
 $Sheet
@@ -1067,21 +1048,19 @@ Connection ~ 2400 5500
 Wire Wire Line
 	2400 5500 2400 5800
 NoConn ~ 4700 2200
-Text Label 5400 2600 2    50   ~ 0
+Text Label 5100 2600 2    50   ~ 0
 USB_P
-Text Label 5400 2500 2    50   ~ 0
+Text Label 5100 2500 2    50   ~ 0
 USB_N
 Wire Wire Line
-	5400 2600 4700 2600
+	5100 2600 4700 2600
 Wire Wire Line
-	5400 2500 4700 2500
+	5100 2500 4700 2500
 Text Label 9300 1100 0    50   ~ 0
 IO_SDA
 Wire Wire Line
 	9300 1100 10000 1100
 NoConn ~ 4700 1500
-NoConn ~ 4700 1600
-NoConn ~ 4700 2100
 NoConn ~ 4700 3100
 NoConn ~ 3300 3200
 NoConn ~ 3300 3500
@@ -1146,12 +1125,12 @@ Wire Wire Line
 Text Label 8100 5100 2    50   ~ 0
 EXT_RX
 Wire Wire Line
-	5400 4300 4700 4300
-Text Label 5400 4300 2    50   ~ 0
+	2500 2900 3300 2900
+Text Label 2500 2900 0    50   ~ 0
 EXT_RX
 Wire Wire Line
-	5400 4400 4700 4400
-Text Label 5400 4400 2    50   ~ 0
+	2600 4300 3300 4300
+Text Label 2600 4300 0    50   ~ 0
 EXT_TX
 Wire Wire Line
 	7100 5200 7200 5200
@@ -1269,4 +1248,190 @@ Wire Wire Line
 	5400 4600 4700 4600
 Text Label 5400 4600 2    50   ~ 0
 EXT_MODE
+$Comp
+L Device:R R?
+U 1 1 60297821
+P 5500 1850
+AR Path="/5FE0391C/60297821" Ref="R?"  Part="1" 
+AR Path="/5FE0881D/60297821" Ref="R?"  Part="1" 
+AR Path="/5FC5F106/60297821" Ref="R?"  Part="1" 
+AR Path="/60297821" Ref="R30"  Part="1" 
+F 0 "R30" H 5450 1900 50  0000 R CNN
+F 1 "10k" H 5450 1800 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5430 1850 50  0001 C CNN
+F 3 "~" H 5500 1850 50  0001 C CNN
+F 4 "C128781" H 5500 1850 50  0001 C CNN "lcsc#"
+F 5 "TC0325F1002T5E" H 5500 1850 50  0001 C CNN "manf#"
+	1    5500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60297829
+P 6150 1600
+AR Path="/5FE0391C/60297829" Ref="R?"  Part="1" 
+AR Path="/5FE0881D/60297829" Ref="R?"  Part="1" 
+AR Path="/5FC5F106/60297829" Ref="R?"  Part="1" 
+AR Path="/60297829" Ref="R17"  Part="1" 
+F 0 "R17" V 6100 1750 50  0000 L CNN
+F 1 "150k" V 6150 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6080 1600 50  0001 C CNN
+F 3 "~" H 6150 1600 50  0001 C CNN
+F 4 "C311920" H 6150 1600 50  0001 C CNN "lcsc#"
+F 5 "ARG03DTC1503" H 6150 1600 50  0001 C CNN "manf#"
+	1    6150 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 1600 5500 1700
+Wire Wire Line
+	4700 1600 5500 1600
+Connection ~ 5500 1600
+$Comp
+L Device:R R?
+U 1 1 60343C2E
+P 2250 3300
+AR Path="/5FE0391C/60343C2E" Ref="R?"  Part="1" 
+AR Path="/5FE0881D/60343C2E" Ref="R?"  Part="1" 
+AR Path="/5FC5F106/60343C2E" Ref="R?"  Part="1" 
+AR Path="/60343C2E" Ref="R31"  Part="1" 
+F 0 "R31" V 2200 3450 50  0000 L CNN
+F 1 "150k" V 2250 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 3300 50  0001 C CNN
+F 3 "~" H 2250 3300 50  0001 C CNN
+F 4 "C311920" H 2250 3300 50  0001 C CNN "lcsc#"
+F 5 "ARG03DTC1503" H 2250 3300 50  0001 C CNN "manf#"
+	1    2250 3300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2900 3300 2900 3400
+Connection ~ 5900 3300
+$Comp
+L Device:C C?
+U 1 1 603CBC32
+P 5900 1850
+AR Path="/5FB747BE/603CBC32" Ref="C?"  Part="1" 
+AR Path="/603CBC32" Ref="C50"  Part="1" 
+F 0 "C50" H 5900 1950 50  0000 R CNN
+F 1 "100n" H 5900 1750 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5938 1700 50  0001 C CNN
+F 3 "~" H 5900 1850 50  0001 C CNN
+F 4 "C1591" H 5900 1850 50  0001 C CNN "lcsc#"
+F 5 "CL10B104KB8NNNC" H 5900 1850 50  0001 C CNN "manf#"
+	1    5900 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1600 5900 1700
+$Comp
+L Device:R R?
+U 1 1 60429943
+P 2900 3550
+AR Path="/5FE0391C/60429943" Ref="R?"  Part="1" 
+AR Path="/5FE0881D/60429943" Ref="R?"  Part="1" 
+AR Path="/5FC5F106/60429943" Ref="R?"  Part="1" 
+AR Path="/60429943" Ref="R32"  Part="1" 
+F 0 "R32" H 2850 3600 50  0000 R CNN
+F 1 "10k" H 2850 3500 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 3550 50  0001 C CNN
+F 3 "~" H 2900 3550 50  0001 C CNN
+F 4 "C128781" H 2900 3550 50  0001 C CNN "lcsc#"
+F 5 "TC0325F1002T5E" H 2900 3550 50  0001 C CNN "manf#"
+	1    2900 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60435833
+P 2500 3550
+AR Path="/5FB747BE/60435833" Ref="C?"  Part="1" 
+AR Path="/60435833" Ref="C51"  Part="1" 
+F 0 "C51" H 2500 3650 50  0000 R CNN
+F 1 "100n" H 2500 3450 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2538 3400 50  0001 C CNN
+F 3 "~" H 2500 3550 50  0001 C CNN
+F 4 "C1591" H 2500 3550 50  0001 C CNN "lcsc#"
+F 5 "CL10B104KB8NNNC" H 2500 3550 50  0001 C CNN "manf#"
+	1    2500 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3400 2500 3300
+$Comp
+L power:+12V #PWR?
+U 1 1 6044FC78
+P 7000 1500
+AR Path="/5FE0881D/6044FC78" Ref="#PWR?"  Part="1" 
+AR Path="/5FC5F106/6044FC78" Ref="#PWR?"  Part="1" 
+AR Path="/6044FC78" Ref="#PWR031"  Part="1" 
+F 0 "#PWR031" H 7000 1350 50  0001 C CNN
+F 1 "+12V" H 7015 1673 50  0000 C CNN
+F 2 "" H 7000 1500 50  0001 C CNN
+F 3 "" H 7000 1500 50  0001 C CNN
+	1    7000 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1500 7000 1600
+Wire Wire Line
+	7000 1600 6300 1600
+$Comp
+L power:+24V #PWR?
+U 1 1 60469C32
+P 1300 3200
+AR Path="/5FC5F106/60469C32" Ref="#PWR?"  Part="1" 
+AR Path="/60469C32" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 1300 3050 50  0001 C CNN
+F 1 "+24V" H 1315 3373 50  0000 C CNN
+F 2 "" H 1300 3200 50  0001 C CNN
+F 3 "" H 1300 3200 50  0001 C CNN
+	1    1300 3200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3200 1300 3300
+Wire Wire Line
+	3300 3100 1500 3100
+Connection ~ 1500 3100
+Wire Wire Line
+	1500 3100 1500 3000
+NoConn ~ 4700 3800
+Wire Wire Line
+	5900 2000 5900 2100
+Connection ~ 5900 1600
+Wire Wire Line
+	5900 1600 6000 1600
+Wire Wire Line
+	5500 1600 5900 1600
+Wire Wire Line
+	5900 2100 5500 2100
+Wire Wire Line
+	5500 2100 5500 2000
+Connection ~ 5900 2100
+Wire Wire Line
+	5900 2100 5900 3300
+NoConn ~ 4700 2100
+Connection ~ 2500 3300
+Wire Wire Line
+	2500 3300 2400 3300
+Wire Wire Line
+	2500 3300 2900 3300
+Wire Wire Line
+	3300 3300 2900 3300
+Connection ~ 2900 3300
+Wire Wire Line
+	2900 3700 2900 3800
+Wire Wire Line
+	2900 3800 2500 3800
+Wire Wire Line
+	2500 3800 2500 3700
+Wire Wire Line
+	2500 3800 1500 3800
+Connection ~ 2500 3800
+Connection ~ 1500 3800
+Wire Wire Line
+	1500 3800 1500 3100
+Wire Wire Line
+	2100 3300 1300 3300
 $EndSCHEMATC
