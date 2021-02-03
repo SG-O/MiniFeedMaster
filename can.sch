@@ -26,6 +26,7 @@ F 1 "ISO1044" H 3800 3474 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3800 3100 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/iso1044.pdf" H 3800 3100 50  0001 C CNN
 F 4 "ISO1044BD" H 3800 3100 50  0001 C CNN "manf#"
+F 5 "+can,-nocan" H 3800 3100 50  0001 C CNN "Config"
 	1    3800 3100
 	1    0    0    -1  
 $EndComp
@@ -77,6 +78,7 @@ F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3100 1500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn6505b.pdf" H 2800 2150 50  0001 C CNN
 F 4 "SN6505BDBVR" H 3100 1900 50  0001 C CNN "manf#"
 F 5 "C74518" H 3100 1900 50  0001 C CNN "lcsc#"
+F 6 "+can,-nocan" H 3100 1900 50  0001 C CNN "Config"
 	1    3100 1900
 	1    0    0    -1  
 $EndComp
@@ -90,6 +92,7 @@ F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5900 2125 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tps763.pdf" H 5900 1800 50  0001 C CNN
 F 4 "C194609" H 5900 1800 50  0001 C CNN "lcsc#"
 F 5 "TPS76350DBVR" H 5900 1800 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" H 5900 1800 50  0001 C CNN "Config"
 	1    5900 1800
 	1    0    0    -1  
 $EndComp
@@ -102,6 +105,7 @@ F 1 "1:2.1" H 3800 2200 50  0000 C CNN
 F 2 "global:TOROID_SMD_6PIN_(1109)" H 3800 1900 50  0001 C CNN
 F 3 "" H 3800 1900 50  0001 C CNN
 F 4 "760390015" H 3800 1900 50  0001 C CNN "manf#"
+F 5 "+can,-nocan" H 3800 1900 50  0001 C CNN "Config"
 	1    3800 1900
 	1    0    0    1   
 $EndComp
@@ -137,6 +141,7 @@ F 2 "Diode_SMD:D_SOD-123" H 4250 1700 50  0001 C CNN
 F 3 "~" H 4250 1700 50  0001 C CNN
 F 4 "C23848" H 4250 1700 50  0001 C CNN "lcsc#"
 F 5 "MBR0520LT1G" H 4250 1700 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" H 4250 1700 50  0001 C CNN "Config"
 	1    4250 1700
 	-1   0    0    1   
 $EndComp
@@ -150,6 +155,7 @@ F 2 "Diode_SMD:D_SOD-123" H 4250 2100 50  0001 C CNN
 F 3 "~" H 4250 2100 50  0001 C CNN
 F 4 "C23848" H 4250 2100 50  0001 C CNN "lcsc#"
 F 5 "MBR0520LT1G" H 4250 2100 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" H 4250 2100 50  0001 C CNN "Config"
 	1    4250 2100
 	-1   0    0    1   
 $EndComp
@@ -193,6 +199,7 @@ F 2 "Capacitor_SMD:C_1206_3216Metric" H 4838 1800 50  0001 C CNN
 F 3 "~" H 4800 1950 50  0001 C CNN
 F 4 "C14860" H 4800 1950 50  0001 C CNN "lcsc#"
 F 5 "CL31B106KAHNNNE" H 4800 1950 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" H 4800 1950 50  0001 C CNN "Config"
 	1    4800 1950
 	1    0    0    -1  
 $EndComp
@@ -208,6 +215,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 5238 1800 50  0001 C CNN
 F 3 "~" H 5200 1950 50  0001 C CNN
 F 4 "C1591" H 5200 1950 50  0001 C CNN "lcsc#"
 F 5 "CL10B104KB8NNNC" H 5200 1950 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" H 5200 1950 50  0001 C CNN "Config"
 	1    5200 1950
 	1    0    0    -1  
 $EndComp
@@ -243,6 +251,7 @@ F 2 "Capacitor_SMD:C_1206_3216Metric" H 6338 1800 50  0001 C CNN
 F 3 "~" H 6300 1950 50  0001 C CNN
 F 4 "C14860" H 6300 1950 50  0001 C CNN "lcsc#"
 F 5 "CL31B106KAHNNNE" H 6300 1950 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" H 6300 1950 50  0001 C CNN "Config"
 	1    6300 1950
 	1    0    0    -1  
 $EndComp
@@ -267,6 +276,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 2038 1500 50  0001 C CNN
 F 3 "~" H 2000 1650 50  0001 C CNN
 F 4 "C1591" H 2000 1650 50  0001 C CNN "lcsc#"
 F 5 "CL10B104KB8NNNC" H 2000 1650 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" H 2000 1650 50  0001 C CNN "Config"
 	1    2000 1650
 	1    0    0    -1  
 $EndComp
@@ -316,6 +326,8 @@ F 2 "global:FIL_ACT45B-510-2P-TL003" H 7000 3140 50  0001 C CNN
 F 3 "~" H 7000 3140 50  0001 C CNN
 F 4 "ACT45B-510-2P-TL003" H 7000 3100 50  0001 C CNN "manf#"
 F 5 "C76584" H 7000 3100 50  0001 C CNN "lcsc#"
+F 6 "+can,-nocan" H 7000 3100 50  0001 C CNN "Config"
+F 7 "DNP" H 7000 3100 50  0001 C CNN "DNP"
 	1    7000 3100
 	1    0    0    -1  
 $EndComp
@@ -331,6 +343,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4838 2400 50  0001 C CNN
 F 3 "~" H 4800 2550 50  0001 C CNN
 F 4 "C1591" H 4800 2550 50  0001 C CNN "lcsc#"
 F 5 "CL10B104KB8NNNC" H 4800 2550 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" H 4800 2550 50  0001 C CNN "Config"
 	1    4800 2550
 	1    0    0    -1  
 $EndComp
@@ -361,6 +374,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 6980 3500 50  0001 C CNN
 F 3 "~" H 7050 3500 50  0001 C CNN
 F 4 "C163836" H 7050 3500 50  0001 C CNN "lcsc#"
 F 5 "WR06X0000FTL" H 7050 3500 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" V 7050 3500 50  0001 C CNN "Config"
 	1    7050 3500
 	0    1    1    0   
 $EndComp
@@ -376,6 +390,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 6980 2700 50  0001 C CNN
 F 3 "~" H 7050 2700 50  0001 C CNN
 F 4 "C163836" H 7050 2700 50  0001 C CNN "lcsc#"
 F 5 "WR06X0000FTL" H 7050 2700 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" V 7050 2700 50  0001 C CNN "Config"
 	1    7050 2700
 	0    1    1    0   
 $EndComp
@@ -421,6 +436,7 @@ F 2 "Package_TO_SOT_SMD:SOT-23" H 7450 3100 50  0001 C CNN
 F 3 "~" H 7450 3100 50  0001 C CNN
 F 4 "C246766" H 7600 3100 50  0001 C CNN "lcsc#"
 F 5 "ESDCAN24-2BLY" H 7600 3100 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" V 7600 3100 50  0001 C CNN "Config"
 	1    7600 3100
 	0    -1   -1   0   
 $EndComp
@@ -455,6 +471,7 @@ F 2 "global:TerminalBlock_KaiFeng_KF141R-3_1x03_P2.54mm" H 8800 2800 50  0001 C 
 F 3 "~" H 8800 2800 50  0001 C CNN
 F 4 "C475125" H 8800 2800 50  0001 C CNN "lcsc#"
 F 5 "KF141R-2.54-3P" H 8800 2800 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" H 8800 2800 50  0001 C CNN "Config"
 	1    8800 2800
 	1    0    0    -1  
 $EndComp
@@ -519,6 +536,7 @@ F 2 "Capacitor_SMD:C_1206_3216Metric" H 2038 2900 50  0001 C CNN
 F 3 "~" H 2000 3050 50  0001 C CNN
 F 4 "C14860" H 2000 3050 50  0001 C CNN "lcsc#"
 F 5 "CL31B106KAHNNNE" H 2000 3050 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" H 2000 3050 50  0001 C CNN "Config"
 	1    2000 3050
 	1    0    0    -1  
 $EndComp
@@ -534,6 +552,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 2438 2900 50  0001 C CNN
 F 3 "~" H 2400 3050 50  0001 C CNN
 F 4 "C1591" H 2400 3050 50  0001 C CNN "lcsc#"
 F 5 "CL10B104KB8NNNC" H 2400 3050 50  0001 C CNN "manf#"
+F 6 "+can,-nocan" H 2400 3050 50  0001 C CNN "Config"
 	1    2400 3050
 	1    0    0    -1  
 $EndComp
